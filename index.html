@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <h2>Calculator</h2>
+        <div class="row">
+            <div>
+
+                <input type="text" id="a" name="a" style="width: 100px">
+            </div>
+            <div>
+
+                <select name="sign" id="sign">
+                    <option value="addition">+</option>
+                    <option value="subtraction">-</option>
+                    <option value="multiplication">×</option>
+                    <option value="division">÷</option>
+                    <option value="add">%</option>
+                </select>
+            </div>
+
+            <div>
+                <input type="text" id="b" name="b" style="width: 100px">
+                <button id="equal"> = </button>
+            </div>
+        </div>
+        <button id="clear">Clear</button>
+        <ul></ul>
+    </div>
+</div>
+
+<script>
+    const a = document.getElementById('a');
+    const b = document.getElementById('b');
+
+    const symbol = document.querySelector('select')
+
+    const ans = document.querySelector('ul');
+
+    const equalButton = document.getElementById('equal');
+    const clearButton = document.getElementById('clear');
+
+    equalButton.addEventListener('click', function(e){
+        if (symbol = addition){}
+        let inputA = +a.value;
+        let inputB = +b.value;
+        let sum = (inputA + inputB);
+
+        if (!check(inputA) || !check(inputB)){
+            ans.textContent = 'Invalid Inputs'
+            return;
+        }
+        ans.textContent= sum
+    })
+
+    clearButton.addEventListener('click', function(e){
+        a.value = "";
+        b.value = "";
+    })
+
+    function check(num){
+        if (isNaN(num)){
+            return false
+        }
+        if (num <= 0){
+            return false
+        }
+        return true
+    }
+
+
+
+</script>
+
+</body>
+</html>
