@@ -14,9 +14,9 @@ label {
 }
 
 input[type="text"], textarea, select{
-    font-size: .875rem;
+    font-size: 16px;
     line-height: 1.25rem;
-    border: 1px solid #d1d5db;
+    border: 2px solid #d1d5db;
     border-radius: 6px;
     padding: 8px 12px;
     margin-bottom: 12px;
@@ -68,8 +68,8 @@ section header{
     background: white;
     padding: 20px;
     border-radius: 12px;
-    width: 500px;
-    height: 750px;
+    width: 550px;
+    height: 900px;
 }
 .center{
     display: flex;
@@ -79,4 +79,8 @@ section header{
 button{
     margin: 4px;
     font-size: 16px;
+}
+
+ul{
+    font-size: 18px;
 }

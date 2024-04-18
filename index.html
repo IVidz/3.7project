@@ -8,8 +8,8 @@
 <body>
 <div class="container">
     <div class="content">
-        <h1>Calculator</h1>
-        <div class="row">
+        <h1 class="center">Calculator</h1>
+        <div class="row center">
             <div>
                 <label for="a"></label>
                 <input type="text" id="a" style="width: 100px">
@@ -20,14 +20,16 @@
                 <button id="clear">Clear</button>
             </div>
         </div>
-        <button id="add">+</button>
-        <button id="minus">–</button>
-        <button id="times">×</button>
-        <button id="divide">÷</button>
-        <button id="%">%</button>
+        <div class="center">
+            <button id="add">+</button>
+            <button id="minus">–</button>
+            <button id="times">×</button>
+            <button id="divide">÷</button>
+
+        </div>
         <p></p>
         <button id="delete">Delete</button>
-        <ul id="statements"></ul>
+            <ul id="statements"></ul>
     </div>
 </div>
 
@@ -74,7 +76,6 @@
             ans.textContent = 'Invalid Inputs'
             return;
         }
-
         a.value = ""
         b.value = ""
 
@@ -93,7 +94,6 @@
             ans.textContent = 'Invalid Inputs'
             return;
         }
-
         a.value = ""
         b.value = ""
 
@@ -112,7 +112,6 @@
             ans.textContent = 'Invalid Inputs'
             return;
         }
-
         a.value = ""
         b.value = ""
 
@@ -128,19 +127,14 @@
     deleteButton.addEventListener('click', function(e){
         a.value = "";
         b.value = "";
+        ans.textContent = "";
     })
-
     function check(num){
         if (isNaN(num)){
             return false
         }
-        if (num <= 0){
-            return false
-        }
         return true
     }
-
-
 </script>
 </body>
 </html>
