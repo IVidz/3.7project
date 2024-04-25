@@ -8,7 +8,7 @@
 <body>
 <div class="container">
     <div class="content">
-        <h1 class="center">Calculator</h1>
+        <h1 class="center" style="color: midnightblue">Calculator</h1>
         <div class="row center">
             <div>
                 <label for="a"></label>
@@ -25,11 +25,10 @@
             <button id="minus">–</button>
             <button id="times">×</button>
             <button id="divide">÷</button>
-
         </div>
         <p></p>
         <button id="delete">Delete</button>
-            <ul id="statements"></ul>
+        <ul id="statements"></ul>
     </div>
 </div>
 
@@ -87,8 +86,8 @@
     multiply.addEventListener('click', function(e){
         let inputA = +a.value;
         let inputB = +b.value;
-        let minus = (inputA * inputB);
-        let statement = inputA + " × " + inputB + " = " + minus
+        let times = (inputA * inputB);
+        let statement = inputA + " × " + inputB + " = " + times
 
         if (!check(inputA) || !check(inputB)){
             ans.textContent = 'Invalid Inputs'
@@ -105,8 +104,8 @@
     divide.addEventListener('click', function(e){
         let inputA = +a.value;
         let inputB = +b.value;
-        let minus = (inputA / inputB);
-        let statement = inputA + " ÷ " + inputB + " = " + minus
+        let divide = (inputA / inputB);
+        let statement = inputA + " ÷ " + inputB + " = " + divide
 
         if (!check(inputA) || !check(inputB)){
             ans.textContent = 'Invalid Inputs'
