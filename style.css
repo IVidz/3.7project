@@ -4,7 +4,6 @@
 body{
     background: #f3f4f6;
 }
-
 label {
     display: block;
     line-height: 1.25rem;
@@ -16,25 +15,12 @@ label {
 input[type="text"], textarea, select{
     font-size: 16px;
     line-height: 1.25rem;
-    border: 2px solid #d1d5db;
+    border: 1px solid #374151;
     border-radius: 6px;
     padding: 8px 12px;
     margin-bottom: 12px;
     color: #374151;
-    background: lightsteelblue;
-}
-fieldset{
-    border: 1px solid #d1d5db;
-    border-radius: 6px;
-    width: fit-content;
-    margin-bottom: 16px;
-    padding: 12px;
-}
-
-
-fieldset legend{
-    font-size: 14px;
-    color: #374151;
+    background: lightgrey;
 }
 
 input[type="checkbox"]{
@@ -58,7 +44,6 @@ section header{
     gap: 16px;
 }
 
-
 .container{
     max-width: 1300px;
     margin: 0 auto;
@@ -66,20 +51,28 @@ section header{
 
 .content{
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
-    background: aliceblue;
+    background: whitesmoke;
     padding: 20px;
     border-radius: 12px;
     width: 550px;
     height: 900px;
+    font-family: sans-serif;
 }
+
 .center{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 button{
-    margin: 4px;
-    font-size: 16px;
+    margin: 5px;
+    font-size: 18px;
+    background: aliceblue;
+    border-radius: 4px;
+    border-width: 1.75px;
+    font-weight: bold;
+    padding: 2px 8px;
 }
 
 ul{

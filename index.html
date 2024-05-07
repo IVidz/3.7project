@@ -8,16 +8,16 @@
 <body>
 <div class="container">
     <div class="content">
-        <h1 class="center" style="color: midnightblue">Calculator</h1>
+        <h1 class="center">Calculator</h1>
         <div class="row center">
             <div>
                 <label for="a"></label>
-                <input type="text" id="a" style="width: 100px">
+                <input type="text" id="a" style="width: 115px">
             </div>
             <div>
                 <label for="b"></label>
-                <input type="text" id="b" style="width: 100px">
-                <button id="clear">Clear</button>
+                <input type="text" id="b" style="width: 115px">
+                <button id="clear">CLEAR</button>
             </div>
         </div>
         <div class="center">
@@ -27,11 +27,10 @@
             <button id="divide">÷</button>
         </div>
         <p></p>
-        <button id="delete">Delete</button>
+        <button id="delete">DELETE</button>
         <ul id="statements"></ul>
     </div>
 </div>
-
 
 <script>
     const a = document.getElementById('a');
@@ -51,7 +50,7 @@
         let inputA = +a.value;
         let inputB = +b.value;
         let sum = (inputA + inputB);
-        let statement = inputA + " + " + inputB + " = " + sum
+        let statement = inputA + " + " + inputB + " = " + sum ;
 
         if (!check(inputA) || !check(inputB)){
             ans.textContent = 'Invalid Inputs'
@@ -69,7 +68,7 @@
         let inputA = +a.value;
         let inputB = +b.value;
         let minus = (inputA - inputB);
-        let statement = inputA + " – " + inputB + " = " + minus
+        let statement = inputA + " – " + inputB + " = " + minus ;
 
         if (!check(inputA) || !check(inputB)){
             ans.textContent = 'Invalid Inputs'
@@ -87,7 +86,7 @@
         let inputA = +a.value;
         let inputB = +b.value;
         let times = (inputA * inputB);
-        let statement = inputA + " × " + inputB + " = " + times
+        let statement = inputA + " × " + inputB + " = " + times ;
 
         if (!check(inputA) || !check(inputB)){
             ans.textContent = 'Invalid Inputs'
@@ -105,7 +104,7 @@
         let inputA = +a.value;
         let inputB = +b.value;
         let divide = (inputA / inputB);
-        let statement = inputA + " ÷ " + inputB + " = " + divide
+        let statement = inputA + " ÷ " + inputB + " = " + divide ;
 
         if (!check(inputA) || !check(inputB)){
             ans.textContent = 'Invalid Inputs'
@@ -137,3 +136,4 @@
 </script>
 </body>
 </html>
+
